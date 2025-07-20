@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <div>Hello Top from html</div>
+    <div id="root">
+      <h1>Harshitha is here!</h1>  <!-- this H1 tag is being replaced by the cide in App.js, but this is rendered initailly on the website before overriden bu app.js-->
+    </div>
+    <div>Hello Bottom from html</div>
+
+    <!-- suppose if we change the order of the file
+    
+    <script src="./App.js"></script>
+
+    error : React is not defined
+
+    now the code will not work this is because we are trying to use js file with
+    react code inside even before we have declared and imported react to our
+    project -->
+
+    <script
+      crossorigin 
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="./App.js"></script>
+  </body>
+</html>
