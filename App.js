@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 /** 
  * TODO: This is the html structure we want to create using React
@@ -22,21 +24,14 @@
 //ReactElement(object) => becomes an HTML(Browser Understands)
 
 // Parent = react element
-const parent = React.createElement(
-  //type
-  "div",
-
-  // props
-  { id: "parent" }, 
-  
-  //children
-  React.createElement("div", { id: "child1" }, [  // To create siblings create array 
-    React.createElement("h1", {}, "I'm a H1 tag"),
-    React.createElement("h2", {}, "I'm a H2 tag"),
+const parent = React.createElement("div", { id: "parent" },
+  React.createElement("div", { id: "child1" }, [
+    React.createElement("h1", { key: "h1-1" }, "Namaste React"),
+    React.createElement("h2", { key: "h2-1" }, "I'm a H2 tag"),
   ]),
-  React.createElement("div", { id: "child2" }, [  // To create siblings create array 
-    React.createElement("h1", {}, "I'm a H1 tag"),
-    React.createElement("h2", {}, "I'm a H2 tag"),
+  React.createElement("div", { id: "child2" }, [
+    React.createElement("h1", { key: "h1-2" }, "I'm a H1 tag"),
+    React.createElement("h2", { key: "h2-2" }, "I'm a H2 tag"),
   ])
 );
 
@@ -58,3 +53,6 @@ console.log(parent); //object
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(parent); // this is just putting the parent in the "root" tag in index.html file
+
+
+// This Code is not ready to push to Production
