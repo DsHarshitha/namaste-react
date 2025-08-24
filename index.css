@@ -1,3 +1,56 @@
-#heading{
-    color: blueviolet;
+.header {
+   display: flex; 
+   justify-content: space-between;
+   border: 1px solid black;
+}
+
+.logo {
+    width: 100;
+}
+
+.nav-items{
+    padding: 0px 40px;
+}
+
+.nav-items > ul {
+    font-size: 24px;
+
+    display: flex;
+    list-style-type: none;
+    padding: 0px 20px;
+}
+
+.nav-items > ul > li {
+
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-card {
+    margin: 10px;
+    padding: 5px;
+    border:  5px;
+    width: 200px;
+    height: 300px;
+    border: 5px;
+
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card:hover {
+    cursor: pointer;
+    border: 2px solid peachpuff;
+}
+
+.res-card > .card-logo {
+    width: 100%;
+}
+
+.search {
+    padding: 10px;
+
 }
