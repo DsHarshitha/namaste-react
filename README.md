@@ -19,3 +19,8 @@
 - can help host on HTTPs 
 - Tree shaking - remove unused code for us
 - Different dev and production bundles
+
+
+# Commands to install parcel and how to get started
+- npm install [remove process dependencies form package.json if present]
+- npm start

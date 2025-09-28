@@ -23,7 +23,6 @@
   },
   "browserslist": "last 2 versions",
   "devDependencies": {
-    "parcel": "^2.15.4",
-    "process": "^18.2.0"
+    "parcel": "^2.15.4"
   }
 }
