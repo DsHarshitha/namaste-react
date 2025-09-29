@@ -52,3 +52,12 @@
 
  1. import Component from "path"; - Default Import
  2. import {Component} from "path"; - Named Import
+
+ # React Hooks
+ [Normal Js Function]
+ import as named import form react
+ - useState() -- 
+        1. Used to create state variable,
+        2. It maintains the state of the component
+        3. Syntax : const [variableName] = useState(variableValue);
+ - useEffect()
